@@ -17,7 +17,7 @@ birth_day = gets.chomp.to_i
 puts 'Computing your age (with the most complicated algorithms)........'
 
 # TODO: This is probably where you'd like to use your brand new function!
-calculated_age = 0
+calculated_age = age_in_days
 
 
 # Finally, print user's age in days:
