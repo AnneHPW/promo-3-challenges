@@ -14,7 +14,7 @@ def belongs_to?(a_string, a_word)
 end
 
 def replace(initial_string, old_letter, new_letter)
-  return initial_string.sub old_letter, new_letter
+  return initial_string.gsub old_letter, new_letter
   # TODO: return a copy of the string with the new letter replacing the old one
   # example: replace("casanova", "a", "o") => "cosonovo"
 end
