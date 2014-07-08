@@ -1,10 +1,16 @@
 require_relative "compute_name"
 
 def ask_and_get(param)
-  #TODO:
+  puts "What is your #{param} ?"
+  saisie = gets.chomp
+  return saisie.to_s
+
+#TODO:
   #- Ask the user to write a value for param
   #- Get and return the string inputted by the user
 end
+
+
 
 def name_from_terminal
   first_name = ask_and_get("first name")
@@ -20,4 +26,4 @@ full_name = name_from_terminal
 
 # custom_message =
 
-puts custom_message
+puts "Hello, #{full_name} "
