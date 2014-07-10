@@ -27,21 +27,30 @@ def short_words(array, max_length)
 end
 
 def first_under(array, limit)
+
+  array.find { |el|  el < limit }
   # TODO: Return the first number from an array that is less than limit.
   #       You should use Enumerable#find
 end
 
 def add_bang(array)
+
+  array.map { |el|  el + "!" }
   # TODO: Take an array of strings and return a new array with "!" appended to each string.
   #       You should use Enumerable#map
 end
 
 def product(array)
+
+  array.reduce(:+)
   # TODO: Calculate the product of an array of numbers.
   #       You should use of Enumerable#reduce
 end
 
 def sorted_pairs(array)
+slice = 0
+  array.each_slice(2) { |a| a.sort }
+    slice += a
   # TODO: Reorganize an array into slices of 2 elements, and sort each slice alphabetically.
   #       You should make use of Enumerable#each_slice
 end
