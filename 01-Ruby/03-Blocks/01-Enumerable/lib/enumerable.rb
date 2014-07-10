@@ -42,7 +42,7 @@ end
 
 def product(array)
 
-  array.reduce(:+)
+  array.reduce(:*)
   # TODO: Calculate the product of an array of numbers.
   #       You should use of Enumerable#reduce
 end
@@ -50,8 +50,7 @@ end
 def sorted_pairs(array)
   slices = []
   array.each_slice(2) do |a|
-    a.sort
-    slices << a
+    slices << a.sort
   end
 
   return slices
