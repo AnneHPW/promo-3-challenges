@@ -4,6 +4,8 @@ end
 
 class BankAccount
 
+
+
   # Contract for the BankAccount class
   # - you can access full owner's name and position, but partial IBAN
   # - you cannot access full IBAN
@@ -34,7 +36,7 @@ class BankAccount
     # TODO: returns a string with a message
   end
 
-  def transactions_history(args = {})
+  def transactions_history(args = {|check, @password|})
     # TODO: Check if there is a password and if so if it is correct
     # TODO: return a string displaying the transactions, BUT NOT return the transaction array !
   end
@@ -51,8 +53,12 @@ class BankAccount
   private
 
   def add_transaction(amount)
+    @transaction << amount
+    @position += amount
     # TODO: add the amount in the transactions array
     # TODO: update the current position (which represents the balance of the account)
   end
 
 end
+
+BankAccount = BankAccount.new
