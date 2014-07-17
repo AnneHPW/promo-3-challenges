@@ -8,7 +8,7 @@ module DemoModule
     end
 
     def introduce
-      #TODO: choose return between 1, 2, 3
+      #TODO: choose return between 1, 2,
       return 3
     end
 
