@@ -10,7 +10,7 @@ puts "What's your best shot ?"
 start_time = Time.now
 attempt = gets.chomp
 end_time = Time.now
-
+puts check_grid?(attempt, grid)
 puts "******** Now your result ********"
 
 result = run_game(attempt, grid, start_time, end_time)
