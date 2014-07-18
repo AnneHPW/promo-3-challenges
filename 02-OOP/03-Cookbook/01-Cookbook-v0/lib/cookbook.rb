@@ -1,46 +1,47 @@
 require "csv"
+require_relative "recipe"
 
 class Cookbook
 
-  attr_reader :cookbook
+  attr_reader :recipes
 
-  def initialize
-    @cookbook = []
-    @filepath = "/Users/annebuffetaud/code/AnneHPW/promo-3-challenges/02-OOP/03-Cookbook/01-Cookbook-v0/lib/recipes.csv"
+  def initialize(csv_file)
+    @recipes = []
+    @filepath = csv_file
     load_csv
   end
 
 
   def load_csv
     CSV.foreach(@filepath) do |row|
-      @cookbook << row[0]
+      @recipes << Recipe.new(row[0], row[1])
     end
-
   end
 
   def add_recipe(recipe)
-    @cookbook << recipe
+    @recipes << recipe
     save_csv
   end
 
-  def find_recipe(index)
-    return @cookbook[index]
-  end
-
   def remove_recipe(index)
-    @cookbook.delete_at(index)
+    @recipes.delete_at(index)
     save_csv
   end
 
   def save_csv
     CSV.open(@filepath, "w") do |csv|
-      @cookbook.each do |recipe| # un csv attend toujours une injection de tableau
+      @recipes.each do |recipe| # un csv attend toujours une injection de tableau
         csv << [recipe]
       end
     end
   end
 
 end
+
+
+# def find_recipe(index)
+#     return @recipes[index]
+#   end
 
 # mycb = CookbookRepository.new
 # mycb.add_recipe("Poulet")
