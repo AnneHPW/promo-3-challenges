@@ -12,8 +12,7 @@ def create_post
   source_url = ask('Source url:')
   rating = ask('Rating:')
   date = Time.now
-  querie_new_post = DB.execute("INSERT INTO posts (name, source_url, created_at, rating) VALUES ('#{post[:name]}', '#{post[:source_url]}', '#{post[:created_at]}', '#{post[:rating]}')")
-  DB.execute(querie_new_post)
+  DB.execute("INSERT INTO posts (name, source_url, created_at, rating) VALUES ('#{name}', '#{source_url}', '#{date}', '#{rating}')")
 end
 
 def get_posts
