@@ -3,3 +3,46 @@
   width: 720px;
 	font-family: 'Open Sans', sans-serif;
 }
+header {
+border-bottom: 1px dotted grey;
+padding: 10px;
+}
+.div {
+display: block;
+}
+.h1 {
+text-align: center;
+}
+.h2 {
+display: block;
+font-size: 1.5em;
+-webkit-margin-before: 0.83em;
+-webkit-margin-after: 0.83em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+font-weight: bold;
+}
+.h3 {
+display: block;
+font-size: 1.17em;
+-webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+font-weight: bold;
+}
+.p {
+display: block;
+-webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+}
+.header a {
+display: block;
+width: 100px;
+}
+footer {
+border-top: 1px dotted grey;
+padding: 10px;
+}
