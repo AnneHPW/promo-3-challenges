@@ -1,0 +1,44 @@
+body {
+  background-image: url("http://www.iceme.fr/images/grid.jpg");
+  font-family: 'Open Sans',Helvetica,Arial,sans-serif;
+}
+.wrapper {
+  background-image: url(http://www.iceme.fr/images/background/background.jpg);
+  height: 650px;
+  background-size: cover;
+  padding-top: 150px;
+  text-align: center;
+  color: white;
+}
+.vertical-spacer {
+  height: 4em;
+}
+.block_picture_text {
+  color: #444444;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.btn-primary {
+  background-color: #1abc9c;
+  border-color: #1abc9c;
+}
+#footer {
+  background-color: #222;
+  color: #aaaaaa;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+#footer a {
+  color: #ccc;
+}
+
+.lead h1 {
+font-size: 72px;
+text-shadow: 0 0 20px rgba(0, 0, 0, .8);
+font-weight: normal;
+}
+
+.social {
+  color: #ccc;
+}
