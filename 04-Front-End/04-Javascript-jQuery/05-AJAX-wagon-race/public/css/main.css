@@ -1,0 +1,26 @@
+table {
+  margin: 200px auto 0;
+}
+
+td {
+  border: 1px solid #333;
+  height: 40px;
+  width: 40px;
+}
+
+.active {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#player1 .active {
+  background-image: url('../img/player_1.png');
+}
+
+#player2 .active {
+  background-image: url('../img/player_2.png');
+}
+
+.start-hidden {
+  display: none;
+}

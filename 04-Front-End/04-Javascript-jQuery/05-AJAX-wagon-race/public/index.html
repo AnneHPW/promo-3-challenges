@@ -2,12 +2,37 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>JAJAX Wagon Race</title>
-    <link rel="stylesheet" href="/css/normalize.css" />
-    <link rel="stylesheet" href="/css/main.css" />
+    <title>Wagon Race</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
   </head>
 
   <body>
-    <script src="/js/game.js"></script>
+
+    <button id="start-btn" class="start-hidden">Start a new Game!</button>
+
+    <form id="names-form" class="start-hidden" method="post">
+      <p>
+        <label for="player1-name">Player 1</label>
+        <input type="text" name="player1-name" id="player1-name"  >
+      </p>
+      <p>
+        <label for="player2-name">Player 2</label>
+        <input type="text" name="player2-name" id="player2-name"  >
+      </p>
+      <button id="submit-btn" type="submit">Submit</button>
+    </form>
+
+    <table id="board" class="start-hidden">
+      <tr id="player1" name="name_player1">
+        <td class="active"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+      </tr>
+      <tr id="player2" name="name_player2">
+        <td class="active"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+      </tr>
+    </table>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/race.js"></script>
   </body>
 </html>
