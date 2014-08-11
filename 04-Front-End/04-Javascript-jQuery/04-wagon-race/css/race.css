@@ -4,7 +4,7 @@ body {
 
 .racer_table {
   width: 100%;
-  margin: 0 auto;
+  margin: 200px auto 0;
   border: solid 3px;
 }
 .racer_table td {

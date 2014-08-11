@@ -1,6 +1,8 @@
 var player1_name,
     player2_name;
 var start = Date.now();
+var session_id;
+
 
 function time_elapsed() {
   var end = Date.now(),
@@ -28,10 +30,10 @@ function forward(row) {
   if (next.is(':last-child')) {
     elapsed = time_elapsed();
     if (row.is('#player1')) {
-      alert(player1_name + " has won in " + elapsed + " seconds!");
+      alert(player1_name + " has won in " + elapsed + " seconds! Click OK to start new game");
     }
     else {
-      alert(player2_name + " has won in " + elapsed + " seconds!");
+      alert(player2_name + " has won in " + elapsed + " seconds! Click OK to start a new game");
     }
 
     reset();

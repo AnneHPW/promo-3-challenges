@@ -24,7 +24,7 @@ function run_challenges() {
 
   // Ex 4. Add the .blue CSS class to the table header cells (th elements)
 
-  $( "thead" ).css( "color", "blue" );
+  $( "th" ).addClass( "blue" );
 
 
 
@@ -35,8 +35,9 @@ function run_challenges() {
 
   // Ex 6. Say there is a 15th team added to the table.
   //       Add a row at the bottom, this new team should have zero points.
-  // $("table tbody tr:last").after("<tr><td>15</td><td>My Lose Team </td><td>0</td></tr>");
+  // // $("table tbody tr:last").after("<tr><td>15</td><td>My Lose Team </td><td>0</td></tr>");
   $("table tbody").append("<tr><td>15</td><td>My Lose Team </td><td>0</td></tr>");
+  // $("table").append('<tr><td>'+(team_count + 1)+'</td><td>My Lose Team </td><td>0</td></tr>);
 
   // $('table').appendTo('<tr><td>15</td><td>My new team </td><td>0</td></tr>');
 
@@ -55,7 +56,8 @@ $('th').css("background-color", "#DDF4FF");
 
   // Ex 9. Translate the #results list 20px downward (animation would be great ^_^)
 
-$('#results-wrapper').css("padding-top", "20px");
+// $('#results-wrapper').css("padding-top", "20px");
+$('#results-wrapper').animate({"padding-top" : "20px"});
 
   // Ex 10. Remove the "Email:" label from the DOM
 

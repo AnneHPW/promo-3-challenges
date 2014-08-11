@@ -10,7 +10,8 @@ body {
   right: 0;
   left: 0;
   margin: auto;
-  background: rgba(0, 0, 0, .05);
+  background-color: black;
+  opacity: 0.5
 }
 
 .modal-form {
@@ -21,8 +22,8 @@ body {
   right: 0;
   left: 0;
   margin: auto;
-  width: 600px;
-  height: 800px;
+  width: 80%;
+  height: 80%;
   background:url(http://surfingla.fr/wp-content/uploads/2014/07/thumbnail-session-estivale-loire-atlantique.jpg);
   background-size: cover;
   padding: 15px 30px;
